@@ -4,7 +4,8 @@ Interactive 3D portfolio. The background is a synthetic scan volume (Three.js po
 
 ## Stack
 - Vite 6 (static build, no framework needed for a single-page portfolio)
-- Three.js for the WebGL scene
+- Three.js for the WebGL scene (custom shader, reacts to cursor, scroll speed and project hovers)
+- GSAP + ScrollTrigger and Lenis for smooth scrolling, split-text reveals, scrubbed text, tilt cards and the marquee
 - Plain HTML/CSS with design tokens in `src/style.css`
 - ESLint + Prettier, GitHub Actions CI (lint + build)
 

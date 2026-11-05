@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" />
   </head>
   <body>
-<canvas id="scene" aria-hidden="true"></canvas>
+<div class="progress" aria-hidden="true"><i></i></div>
+    <div class="cursor" aria-hidden="true"><i class="ring"></i><i class="dot"></i></div>
+    <canvas id="scene" aria-hidden="true"></canvas>
 
 <nav>
   <a class="mark" href="#top">Sevesh SS</a>
@@ -27,8 +29,8 @@
   <div class="legend"><i></i> Segmented region</div>
 </div>
 
-<main class="wrap">
-  <div class="col">
+<main>
+  <div class="wrap"><div class="col">
 
     <section id="top" data-label="Intro">
       <div class="text">
@@ -42,18 +44,22 @@
           <a class="btn" href="#contact">Get in touch</a>
         </div>
         <div class="stats">
-          <div class="stat panel"><b>0.86</b><span>Dice score on Kvasir-SEG polyp segmentation</span></div>
+          <div class="stat panel"><b data-count="0.86" data-dec="2">0.86</b><span>Dice score on Kvasir-SEG polyp segmentation</span></div>
           <div class="stat panel"><b>3rd</b><span>Place, NEXORA’26 Hackathon</span></div>
           <div class="stat panel"><b>1 mo</b><span>To deliver CAMS, requirements to production</span></div>
         </div>
       </div>
+      <div class="cue" aria-hidden="true"><span></span>Scroll</div>
     </section>
+  </div></div>
+  <div class="marquee" aria-hidden="true"><div class="track"><span>PyTorch</span><span>U-Net</span><span>YOLO11</span><span>RAG</span><span>Qdrant</span><span>Whisper</span><span>FastAPI</span><span>React</span><span>Next.js</span><span>Ollama</span><span>OpenCV</span><span>MongoDB</span><span>TypeScript</span></div></div>
+  <div class="wrap"><div class="col">
 
     <section id="about" data-label="About">
       <div class="text">
         <p class="eyebrow">About</p>
         <h2>Training models, then shipping them.</h2>
-        <p>I’m a B.Tech AI &amp; ML student who likes the whole path: preparing data, validating a model, and putting it somewhere people can use it. I trained and deployed a medical image segmentation model to HuggingFace Spaces, built local-first computer vision and RAG tools, and delivered a full-stack academic management system in a month as an AI Intern.</p>
+        <p class="scrub">I’m a B.Tech AI &amp; ML student who likes the whole path: preparing data, validating a model, and putting it somewhere people can use it. I trained and deployed a medical image segmentation model to HuggingFace Spaces, built local-first computer vision and RAG tools, and delivered a full-stack academic management system in a month as an AI Intern.</p>
         <p>I work in PyTorch, React and Python, and I care about keeping data private, so most of what I build runs locally.</p>
         <dl class="facts">
           <div><dt>Studying</dt><dd>B.Tech, Artificial Intelligence &amp; Machine Learning, 2024 – 2028</dd></div>
@@ -69,6 +75,7 @@
         <p class="eyebrow">Experience</p>
         <h2>Where I’ve worked.</h2>
         <article class="job panel">
+          <span class="draw"></span>
           <div class="job-head">
             <div>
               <h3>AI Intern</h3>
@@ -164,19 +171,17 @@
     </section>
 
     <section id="contact" data-label="Contact">
-      <div class="text">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s build something.</h2>
-        <p class="muted">Open to internships, research collaborations and hackathon teams.</p>
-        <div class="mail">
-          <code id="email">11sevesh@gmail.com</code>
-          <button class="btn" id="copy" type="button">Copy</button>
-        </div>
-        <div class="contact-links">
-          <a class="btn primary" href="mailto:11sevesh@gmail.com">Email me</a>
-          <a class="btn" href="https://github.com/ss-sevesh" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://orcid.org/0009-0007-5498-8076" target="_blank" rel="noopener">ORCID</a>
-        </div>
+      <p class="eyebrow">Contact</p>
+      <h2 class="mega">Let’s build something.</h2>
+      <p class="muted lead2">Open to internships, research collaborations and hackathon teams.</p>
+      <div class="mail">
+        <a class="mail-big" href="mailto:11sevesh@gmail.com"><span id="email">11sevesh@gmail.com</span></a>
+        <button class="btn" id="copy" type="button">Copy</button>
+      </div>
+      <div class="contact-links">
+        <a class="btn primary" href="mailto:11sevesh@gmail.com">Email me</a>
+        <a class="btn" href="https://github.com/ss-sevesh" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://orcid.org/0009-0007-5498-8076" target="_blank" rel="noopener">ORCID</a>
       </div>
     </section>
 
@@ -184,7 +189,7 @@
       <span>© 2026 Sevesh SS</span>
       <span>Tirupur, Tamil Nadu · Background: a synthetic scan volume. Scroll to step through slices.</span>
     </footer>
-  </div>
+  </div></div>
 </main>
 
     <script type="module" src="/src/main.js"></script>
