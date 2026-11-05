@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0a09" />
+    <meta name="description" content="Sevesh SS, AI/ML engineer. Medical image segmentation, local-first computer vision and RAG applications." />
+    <title>Sevesh SS | AI/ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" />
+  </head>
+  <body>
+<canvas id="scene" aria-hidden="true"></canvas>
+
+<nav>
+  <a class="mark" href="#top">Sevesh SS</a>
+  <div class="links">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#recognition">Awards</a><a href="#contact">Contact</a>
+  </div>
+  <a class="gh" href="https://github.com/ss-sevesh" target="_blank" rel="noopener">GitHub</a>
+</nav>
+
+<div class="hud" aria-hidden="true">
+  <div>Slice <b id="hudSlice">01</b> / <b id="hudTotal">24</b></div>
+  <div id="hudSection">Intro</div>
+  <div class="legend"><i></i> Segmented region</div>
+</div>
+
+<main class="wrap">
+  <div class="col">
+
+    <section id="top" data-label="Intro">
+      <div class="text">
+        <p class="eyebrow">AI / ML Engineer</p>
+        <h1>Sevesh SS</h1>
+        <p class="lede">I build and ship end-to-end AI systems: medical image segmentation, local-first computer vision, and retrieval-augmented apps that run on your own machine.</p>
+        <p class="role">B.Tech AI &amp; ML · Kongu Engineering College · Tirupur, Tamil Nadu</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See projects</a>
+          <a class="btn" href="https://github.com/ss-sevesh" target="_blank" rel="noopener">github.com/ss-sevesh</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <div class="stats">
+          <div class="stat panel"><b>0.86</b><span>Dice score on Kvasir-SEG polyp segmentation</span></div>
+          <div class="stat panel"><b>3rd</b><span>Place, NEXORA’26 Hackathon</span></div>
+          <div class="stat panel"><b>1 mo</b><span>To deliver CAMS, requirements to production</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" data-label="About">
+      <div class="text">
+        <p class="eyebrow">About</p>
+        <h2>Training models, then shipping them.</h2>
+        <p>I’m a B.Tech AI &amp; ML student who likes the whole path: preparing data, validating a model, and putting it somewhere people can use it. I trained and deployed a medical image segmentation model to HuggingFace Spaces, built local-first computer vision and RAG tools, and delivered a full-stack academic management system in a month as an AI Intern.</p>
+        <p>I work in PyTorch, React and Python, and I care about keeping data private, so most of what I build runs locally.</p>
+        <dl class="facts">
+          <div><dt>Studying</dt><dd>B.Tech, Artificial Intelligence &amp; Machine Learning, 2024 – 2028</dd></div>
+          <div><dt>College</dt><dd>Kongu Engineering College</dd></div>
+          <div><dt>Languages</dt><dd>English, Tamil, Hindi</dd></div>
+          <div><dt>Based in</dt><dd>Tirupur, Tamil Nadu, India</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="experience" data-label="Experience">
+      <div class="text">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I’ve worked.</h2>
+        <article class="job panel">
+          <div class="job-head">
+            <div>
+              <h3>AI Intern</h3>
+              <div class="muted">CubeAISolutions Tech Pvt Ltd</div>
+            </div>
+            <div class="when">JAN 2026 – FEB 2026</div>
+          </div>
+          <ul>
+            <li>Developed core AI-driven modules for the College AI Management System (CAMS), streamlining data preparation and record-management workflows.</li>
+            <li>Led full-stack development in React and Python, integrating every layer from the data layer to the UI.</li>
+            <li>Designed the MongoDB persistence layer and pipeline structure to speed up storage and retrieval of academic records.</li>
+            <li>Delivered CAMS end to end, from requirements to production deployment, within a one-month timeline.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" data-label="Projects">
+      <p class="eyebrow">Projects</p>
+      <h2>Selected work.</h2>
+      <div class="projects">
+
+        <article class="proj panel">
+          <span class="tag">Medical image AI</span>
+          <h3>Polyp Segmentation</h3>
+          <p>A U-Net with a ResNet34 encoder trained on Kvasir-SEG to find polyps, reaching 0.86 Dice and 0.76 IoU. A pretrained encoder and stronger augmentation lifted Dice from 0.77, and the model is deployed on HuggingFace Spaces for real-time inference.</p>
+          <div class="bar" role="img" aria-label="Dice improved from 0.77 to 0.86">
+            <div class="row"><span>Dice 0.77 → 0.86</span><span>IoU 0.76</span></div>
+            <div class="track"><div class="after"></div><div class="before"></div></div>
+          </div>
+          <div class="chips"><span class="chip">PyTorch</span><span class="chip">U-Net</span><span class="chip">ResNet34</span><span class="chip">HuggingFace Spaces</span></div>
+          <a class="more" href="https://github.com/ss-sevesh/polyp-segmentation" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="proj panel">
+          <span class="tag">Computer vision · RAG</span>
+          <h3>ShuttleSense</h3>
+          <p>Local-first badminton video analysis. YOLO11-pose, MediaPipe, TrackNetV3 and SegFormer power rally replay, shuttle tracking, body-pose overlays and heatmaps. A RAG coach chat (Qwen3 on Ollama, Qdrant) writes evidence-grounded match reports as PDF or HTML. Video and inference never leave your machine.</p>
+          <div class="chips"><span class="chip">PyTorch</span><span class="chip">OpenCV</span><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Ollama</span><span class="chip">Qdrant</span></div>
+          <a class="more" href="https://github.com/ss-sevesh/shuttlesense" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="proj panel">
+          <span class="tag">Knowledge vault</span>
+          <h3>ReelToReal</h3>
+          <p>A local pipeline that turns saved Instagram Reels and YouTube Shorts into timestamped, Obsidian-compatible notes using yt-dlp, faster-whisper and a vision-language model. Hybrid search combines Qdrant vectors with SQLite BM25 through Reciprocal Rank Fusion, with a RAG chat and a React dashboard on top.</p>
+          <div class="chips"><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">Whisper</span><span class="chip">Qdrant</span><span class="chip">SQLite FTS5</span><span class="chip">Ollama</span></div>
+          <a class="more" href="https://github.com/ss-sevesh/reeltoreal" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="proj panel">
+          <span class="tag">Voice · Local AI</span>
+          <h3>Local Voice</h3>
+          <p>A local voice companion that understands English, Hindi and Hinglish. Speech goes in through Whisper, a Qwen model handles the conversation, and Kokoro speaks the reply, all behind a FastAPI backend and a React front end.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">Whisper</span><span class="chip">Qwen</span><span class="chip">Kokoro</span></div>
+          <a class="more" href="https://github.com/ss-sevesh/localvoice" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+      </div>
+
+      <div class="more-title">More experiments</div>
+      <div class="exp">
+        <a href="https://github.com/ss-sevesh/hawc-chemistry-tutor" target="_blank" rel="noopener"><b>Chemistry Tutor</b><span>PDF retrieval with source-cited local answers.</span></a>
+        <a href="https://github.com/ss-sevesh/manufacturing-quality-predictor" target="_blank" rel="noopener"><b>Manufacturing Quality Predictor</b><span>ML prediction system with a FastAPI backend and React dashboard.</span></a>
+        <a href="https://github.com/ss-sevesh/Aqi-Model" target="_blank" rel="noopener"><b>AQI Model</b><span>Satellite-based air-quality prediction.</span></a>
+        <a href="https://github.com/ss-sevesh/student-attendance-system" target="_blank" rel="noopener"><b>Student Attendance System</b><span>Campus attendance and registration app.</span></a>
+      </div>
+    </section>
+
+    <section id="skills" data-label="Skills">
+      <p class="eyebrow">Skills</p>
+      <h2>What I work with.</h2>
+      <div class="skills">
+        <div class="skill panel"><h3>ML / Deep learning</h3><div class="chips"><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">OpenCV</span><span class="chip">CNN</span><span class="chip">LSTM</span><span class="chip">U-Net</span><span class="chip">YOLO</span><span class="chip">MediaPipe</span><span class="chip">Whisper</span><span class="chip">RAG</span><span class="chip">LLMs (Ollama)</span></div></div>
+        <div class="skill panel"><h3>Languages</h3><div class="chips"><span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">C++</span><span class="chip">Java</span><span class="chip">OOP</span></div></div>
+        <div class="skill panel"><h3>Web &amp; backend</h3><div class="chips"><span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">FastAPI</span><span class="chip">Node.js / Express</span></div></div>
+        <div class="skill panel"><h3>Databases</h3><div class="chips"><span class="chip">SQL</span><span class="chip">MongoDB</span><span class="chip">SQLite</span><span class="chip">Qdrant (vector DB)</span></div></div>
+        <div class="skill panel"><h3>Tools &amp; deployment</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">FFmpeg</span><span class="chip">HuggingFace Spaces</span><span class="chip">Cross-validation</span></div></div>
+      </div>
+    </section>
+
+    <section id="recognition" data-label="Awards">
+      <div class="text">
+        <p class="eyebrow">Awards &amp; training</p>
+        <h2>Hackathons and recognition.</h2>
+        <div class="rec">
+          <div><div><span class="place gold">3rd Place</span></div><div>NEXORA’26 Hackathon<small>Sathyabama Institute of Science and Technology · 1–2 Sept 2026</small></div></div>
+          <div><div><span class="place">2nd Prize</span></div><div>Eco Warrior Award, FIESTA A’26<small>KPR Institute of Engineering and Technology · Feb 2026</small></div></div>
+          <div><div><span class="place">Participant</span></div><div>HackITon’26, 24-hour national hackathon<small>KPR Institute &amp; IEEE · Oct 2026</small></div></div>
+          <div><div><span class="place">Participant</span></div><div>International Hackathon 360°-3.0<small>KPR Institute &amp; ECLearnix EdTech · Feb 2026 · represented KEC in the FIESTA A’26 AI/ML Project Presentation</small></div></div>
+          <div><div><span class="place">Training</span></div><div>In-Plant Training, Data Analytics<small>Ensemble Nexgen, Erode</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-label="Contact">
+      <div class="text">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something.</h2>
+        <p class="muted">Open to internships, research collaborations and hackathon teams.</p>
+        <div class="mail">
+          <code id="email">11sevesh@gmail.com</code>
+          <button class="btn" id="copy" type="button">Copy</button>
+        </div>
+        <div class="contact-links">
+          <a class="btn primary" href="mailto:11sevesh@gmail.com">Email me</a>
+          <a class="btn" href="https://github.com/ss-sevesh" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://orcid.org/0009-0007-5498-8076" target="_blank" rel="noopener">ORCID</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Sevesh SS</span>
+      <span>Tirupur, Tamil Nadu · Background: a synthetic scan volume. Scroll to step through slices.</span>
+    </footer>
+  </div>
+</main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
